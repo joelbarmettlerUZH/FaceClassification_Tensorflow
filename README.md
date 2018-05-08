@@ -87,6 +87,7 @@ direction. So whenever the haar cascade algorithm sees a square of pixels which 
 them as an edge feature. The whole subset of the image is scanned for edges, lines and rectangles. 
 
 ![Haar cascade features](https://docs.opencv.org/3.1.0/haar_features.jpg)
+
 *Figure 1: Haar cascade features. Copyright: [OpenCV.org](https://docs.opencv.org/3.1.0/d7/d8b/tutorial_py_face_detection.html)*
 
 The haar cascade algorithms choses a first subset of the image with a certain size and identifies all these simple
@@ -97,6 +98,7 @@ faces. When the features he identified match to a certain degree with the models
 features, the haar cascade algorithm marks the subset he is currently scanning as a "face". 
 
 ![Haar cascade face detection](https://docs.opencv.org/3.1.0/haar.png)
+
 *Figure 2: Face detection. Copyright: [OpenCV.org](https://docs.opencv.org/3.1.0/d7/d8b/tutorial_py_face_detection.html)*
 
 The subareas are chosen of different sizes and at all possible different positions, to match faces of at any scale.
@@ -105,6 +107,7 @@ applied to. There are cascades for many different objects like eyes, number plat
 All of them base on the principle of identifying simple features and combining them to match high-level objects.
 
 ![Demonstration of haar cascade](https://github.com/joelbarmettlerUZH/FaceClassification_Tensorflow/raw/master/MD_Resources/haar_cascade_demo.gif)
+
 *Figure 3: Demonstration of haar cascade face detection. Copyright: [Adam Harvey](https://www.youtube.com/watch?v=hPCTwxF0qf4)*
 
 The haar cascade we will use for our purpose is the *Frontal face default cascade* which you can download directly
@@ -179,6 +182,7 @@ def liveFaceDetection(self):
 ```
 
 ![Demonstration of Haar Cascade](https://github.com/joelbarmettlerUZH/FaceClassification_Tensorflow/raw/master/MD_Resources/haar_cascade_dem.gif)
+
 *Figure 4: Demonstration of Haar cascade Face detection. Copyright: [SRF](https://www.srf.ch/sendungen/arena)*
 
 We use OpenCV again to import the classification model. After converting the input image to Grayscale, we
@@ -220,6 +224,7 @@ BingImages.download(BingImages("Male Face", count=30, person="portrait").get(), 
 ```
 
 ![Bing Image scarping](https://github.com/joelbarmettlerUZH/FaceClassification_Tensorflow/raw/master/MD_Resources/bing_scraping.gif)
+
 *Figure 5: Demonstrating the background of BingImages.*
 
 Now that we can easily download images, we write a new method which downloads and renames the images for us. 
@@ -316,6 +321,7 @@ whether it gets the job done.
  
 ![Downloaded training data](https://github.com/joelbarmettlerUZH/FaceClassification_Tensorflow/raw/master/MD_Resources/male_resources.png)
 ![Downloaded training data](https://github.com/joelbarmettlerUZH/FaceClassification_Tensorflow/raw/master/MD_Resources/training_data_female.png)
+
 *Figure 6: The face training data for Males & Females. Copyright: Various, but certainly not me.*
 
 
@@ -330,7 +336,8 @@ models are able to precisely classify images from tousands of classes and the mo
 Artificial Intelligence expertes to produce the highest output possible. 
 
 ![Inception V3 Model by Google Brain](https://cdn-images-1.medium.com/max/1600/1*ZCXqy5c-MwRzJlo7rYPyRQ.png)
-*Figure 7: Inception V3 Model by Google Brain. Copyright: [Medium](https://cdn-images-1.medium.com/max/1600/1*ZCXqy5c-MwRzJlo7rYPyRQ.png)
+
+*Figure 7: Inception V3 Model by Google Brain. Copyright: [Medium](https://cdn-images-1.medium.com/max/1600/1*ZCXqy5c-MwRzJlo7rYPyRQ.png)*
 
 What if we could take such an advanced model and retrain it to classify our classes for us? Well, this is exactly
 what *Transfer learning* is all about. As you know, Neural Networks are structured into layers of Neurons. While
@@ -634,6 +641,7 @@ After we downloaded the archives, we unzip them and copy all files to a new loca
 of **img_X.jpg**. 
 
 !["Images from the LFW Dataset"](https://github.com/joelbarmettlerUZH/FaceClassification_Tensorflow/raw/master/MD_Resources/lfw_datset.png)
+
 *Figure 8: Sample from the LFW Datset. Copyright: [University of Massachusetts](http://vis-www.cs.umass.edu/lfw/)*
 
 ## 9.) Classify datasets using inception v3 model
@@ -684,6 +692,7 @@ If the image prediction is good enought, save it to the corresponding folder. Th
 process.
 
 !["Images from the LFW Dataset"](https://github.com/joelbarmettlerUZH/FaceClassification_Tensorflow/raw/master/MD_Resources/lfw_faces.png)
+
 *Figure 9: Cut out faces from the LFW Datset. Copyright: [University of Massachusetts](http://vis-www.cs.umass.edu/lfw/)*
 
 
@@ -722,6 +731,7 @@ like wrinkles or uneven skin for identifying men - which is why often young men 
 since they have face properties that are closer to women of middle age then to men of middle age. 
 
 ![Demonstration of face detector](https://github.com/joelbarmettlerUZH/FaceClassification_Tensorflow/raw/master/MD_Resources/demo_fast.gif)
+
 *Figure 10: Live classification of faces. Copyright: [SRF](https://www.youtube.com/watch?v=n5pQdSHhhnQ).*
 
 # Final Thoughts
