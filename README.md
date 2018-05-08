@@ -367,6 +367,11 @@ explicitly  deal  with  different  distributions  of  object  sizes, locations a
 *Source: Maxime Oquab et. al.: ["Learning and Transferring Mid-Level Image Representations using Convolutional Neural Networks"](http://openaccess.thecvf.com/content_cvpr_2014/papers/Oquab_Learning_and_Transferring_2014_CVPR_paper.pdf)*
 
 
+![Retraining Neural Network](https://github.com/joelbarmettlerUZH/FaceClassification_Tensorflow/raw/master/MD_Resources/retraining_network.png)*
+
+*Figure 8: Retraining a Neural Network. Copyright: ["Learning and Transferring Mid-Level Image Representations using Convolutional Neural Networks"](http://openaccess.thecvf.com/content_cvpr_2014/papers/Oquab_Learning_and_Transferring_2014_CVPR_paper.pdf)*
+
+
 Let's write a method that calls the [retrain.py](https://github.com/tensorflow/hub/raw/r0.1/examples/image_retraining/retrain.py)
 on our training image folder to classify a new tensorflow model.
 
@@ -642,7 +647,7 @@ of **img_X.jpg**.
 
 !["Images from the LFW Dataset"](https://github.com/joelbarmettlerUZH/FaceClassification_Tensorflow/raw/master/MD_Resources/lfw_datset.png)
 
-*Figure 8: Sample from the LFW Datset. Copyright: [University of Massachusetts](http://vis-www.cs.umass.edu/lfw/)*
+*Figure 9: Sample from the LFW Datset. Copyright: [University of Massachusetts](http://vis-www.cs.umass.edu/lfw/)*
 
 ## 9.) Classify datasets using inception v3 model
 The next step is to cut out the faces of the images, classify them and moving them yet to another location.
@@ -693,7 +698,7 @@ process.
 
 !["Images from the LFW Dataset"](https://github.com/joelbarmettlerUZH/FaceClassification_Tensorflow/raw/master/MD_Resources/lfw_faces.png)
 
-*Figure 9: Cut out faces from the LFW Datset. Copyright: [University of Massachusetts](http://vis-www.cs.umass.edu/lfw/)*
+*Figure 10: Cut out faces from the LFW Datset. Copyright: [University of Massachusetts](http://vis-www.cs.umass.edu/lfw/)*
 
 
 ## 10.) Retraining Faster MobileNet Model
@@ -732,7 +737,7 @@ since they have face properties that are closer to women of middle age then to m
 
 ![Demonstration of face detector](https://github.com/joelbarmettlerUZH/FaceClassification_Tensorflow/raw/master/MD_Resources/demo_fast.gif)
 
-*Figure 10: Live classification of faces. Copyright: [SRF](https://www.youtube.com/watch?v=n5pQdSHhhnQ).*
+*Figure 11: Live classification of faces. Copyright: [SRF](https://www.youtube.com/watch?v=n5pQdSHhhnQ).*
 
 # Final Thoughts
 
