@@ -645,7 +645,7 @@ def __downloadLFW(self):
 After we downloaded the archives, we unzip them and copy all files to a new location with a given naming scheme
 of **img_X.jpg**. 
 
-!["Images from the LFW Dataset"](https://github.com/joelbarmettlerUZH/FaceClassification_Tensorflow/raw/master/MD_Resources/lfw_datset.png)
+!["Images from the LFW Dataset"](https://github.com/joelbarmettlerUZH/FaceClassification_Tensorflow/raw/master/MD_Resources/lfw_dataset.png)
 
 *Figure 9: Sample from the LFW Datset. Copyright: [University of Massachusetts](http://vis-www.cs.umass.edu/lfw/)*
 
